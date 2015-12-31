@@ -1,0 +1,244 @@
+/* Global Styles*/
+html {
+	padding: 0;
+}
+body {
+	margin: 0;
+	font-family: 'Merriweather', serif;
+	font-size: 22px;
+	box-sizing: border-box;
+	min-width: 319px;
+}
+
+
+/* Page Layout */
+.top_heading {
+	text-align: center;
+	padding: 30px 0;
+	margin: 0 0 30px;
+	color: white;
+	background-color: rgba(45, 57, 64, 1);
+	font-family: 'Lora', serif;
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+.wrapper {
+	width: 92%;
+	margin: 0 auto;
+}
+.sub_heading {
+	margin-top: 35px;
+    margin-bottom: 51px;    
+    text-align: center;
+}
+.sub_heading h2 {
+	font-size: 1.35em;
+	margin-bottom: 10px;
+}
+.sub_heading p {
+	color: rgba(173, 178, 183, 1);
+	margin-top: 0;
+	font-size: 1.1em;
+}
+.contact-info_fieldset {
+	margin-top: 35px;
+	margin-bottom: 13px;
+}
+.contact-info_fieldset legend {
+	margin-bottom: 30px;
+}
+.newsletter_fieldset {
+	margin-top: 38px;
+}
+.recieve_section {
+	margin-top: 31px;
+	margin-bottom: 33px;
+	font-size: 1em;
+	font-weight: normal;
+}
+.format_section {
+	margin-bottom: 38px;
+}
+.number_per_month {
+	margin-bottom: 50px;
+}
+.number_per_month label {
+	font-size: .9em;
+}
+.recieve_section h3,
+.format_section h3,
+.number_per_month h3  {
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 31px;
+	margin-bottom: 13px;
+}
+.thck-hr {
+	background-color: black;
+	height: 5px;
+	width: 100%;
+	margin: 3px 0;
+}
+.thn-hr {
+	margin: 3px 0;
+	background-color: black;
+	height: 2px;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+
+/* Form Styles */
+fieldset {
+	border: 0;
+	padding: 0;
+}
+legend {
+	display: block;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.txt-box,
+select {
+	display: block;
+    width: 100%;
+    height: 72px;
+    background-color: rgba(239, 240, 241, 1);
+	border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+	box-sizing: border-box;
+	font-size: 1.2em;
+	margin: 13px 0 27px;
+	transform: scale(1.0, 1.0);
+	transition: background-color .8s, transform .3s ease-in-out;
+}
+select:first-child {
+	color: rgba(173, 178, 183, 1);
+}
+#zip-code {
+	width: 50%;
+}
+input[type="checkbox"],
+input[type="radio"]{
+	display: none;
+}
+input[type="checkbox"] + label,
+input[type="radio"] + label  {
+	display: block;
+	padding:0.15em 0 0 1.5em;
+    text-indent: 18px;
+	margin-bottom:0.4em;
+	background: url('../img/checkboxes.png') 0 43%/34px no-repeat;
+
+}
+input[type="checkbox"] + label:hover {
+	background-position: 0 22%;
+}
+input[type="checkbox"]:checked + label {
+	background-position: 0 1%;
+}
+input[type="radio"] + label {
+	background-position: 0 69%;
+}
+input[type="radio"]:checked + label {
+	background-position: 0 93%;
+}
+label[for="other-topics"] {
+	display: block;
+}
+#other-topics {
+	height: 142px;
+	vertical-align: top;
+	font-size: .8em;
+	margin-bottom: 34px;
+}
+input[type="submit"] {
+	width: 100%;
+	height: 85px;
+	font-size: 1.4em;
+	font-family: 'Merriweather', serif;
+	color: white;
+	background-color: rgba(78, 187, 181, 1);
+	border-radius: 5px;
+	border: 0;
+	font-weight: bold;
+}
+.copyright {
+	font-size: .9em;
+	font-style: italic;
+	margin: 2em auto 350px;
+	text-align: center;
+	color: rgba(168, 173, 178, 1);
+}
+::-webkit-input-placeholder  {   
+   color: rgba(168, 173, 178, 1);
+   text-align: right;
+   line-height: 40px;
+   font-size: .7em;
+   font-style: italic;
+   padding-right: 6px;
+}
+::-moz-placeholder {
+   color: rgba(168, 173, 178, 1);
+   text-align: right;
+   line-height: 50px;
+   font-size: .7em;
+   font-style: italic;
+   padding-right: 6px;
+}
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+	border: 2px solid rgba(70, 105, 139, 1);
+	background-color: white;
+	transform: scale(1.05, 1.05);
+	transition: background-color .4s, transform .2s ease-in-out;
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}   
+/* Styles for larger screens */
+@media screen and (min-width: 768px) {
+	.wrapper {
+		width: 80%;
+		max-width: 800px;
+	}
+	.sub_heading {
+		margin: 87px auto 69px;
+	}
+	.sub_heading h2 {
+		font-size: 1.75em;
+		margin-bottom: 0;
+	}
+	.sub_heading p {
+		font-size: 1.1em;
+		margin-top: 9px;
+	}
+	.contact-info_fieldset label {
+		float: left;
+		width: 30%;
+		margin-top: 31px;
+	}
+	.contact-info_fieldset input,
+	.contact-info_fieldset select {
+		float: left;
+		width: 70%;
+	}
+	.txt-box {
+		margin: 12px 0;
+	}
+	.thn-hr {
+		margin-bottom: 53px;
+	}
+	#zip-code {
+		margin-bottom: 70px;
+		width: 25%;
+	}
+}
