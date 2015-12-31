@@ -113,9 +113,6 @@ select {
 	transform: scale(1.0, 1.0);
 	transition: background-color .8s, transform .3s ease-in-out;
 }
-select:first-child {
-	color: rgba(173, 178, 183, 1);
-}
 #zip-code {
 	width: 50%;
 }
@@ -187,7 +184,13 @@ input[type="submit"] {
    font-style: italic;
    padding-right: 6px;
 }
-input:focus,
+input:focus::-webkit-input-placeholder{
+	color: transparent;
+}
+input:focus::-moz-placeholder {
+	color: transparent;
+}
+input[class="txt-box"]:focus,
 textarea:focus,
 select:focus {
 	outline: none;
@@ -195,6 +198,14 @@ select:focus {
 	background-color: white;
 	transform: scale(1.05, 1.05);
 	transition: background-color .4s, transform .2s ease-in-out;
+}
+input[id="name"]:valid,
+input[id="email"]:valid {
+	background: rgba(239, 240, 241, 1) url('../img/validate_symbols.png') right -27%/46px no-repeat;
+}
+input[id="name"]:focus:invalid,
+input[id="email"]:focus:invalid {
+	background: url('../img/validate_symbols.png') right 118%/46px no-repeat;
 }
 .clearfix:after {
      visibility: hidden;
@@ -205,7 +216,7 @@ select:focus {
      height: 0;
 }   
 /* Styles for larger screens */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 760px) {
 	.wrapper {
 		width: 80%;
 		max-width: 800px;
